@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('imagens/fundo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #111; /* Cor escura para melhor legibilidade no main */
+}
+
+/* Estilo do cabeçalho e menu de navegação */
+header {
+  /* Quase preto */
+  background-color: #111;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Lista de navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Itens da navegação */
+nav ul li {
+  margin: 0 20px;
+}
+
+/* Links da navegação */
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+/* Efeito hover nos links */
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Estilo do link ativo para destacar a página atual */
+nav ul li a.ativo {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Conteúdo principal da página */
+main {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  /* Bloco com fundo branco e leve transparência */
+  background-color:#ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Estilo para título principal */
+main h1 {
+  text-align: center; /* Centraliza o título */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Estilo para parágrafos de conteúdo */
+main p {
+  text-align: justify; /* Alinha o texto dos parágrafos dos dois lados */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Estilo para o formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* reduz o espaçamento entre os elementos */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Rótulos do formulário */
+form label {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Estilo para os campos de texto e textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+/* Altura maior para o campo de mensagem */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Efeito ao focar nos campos */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #555;
+  outline: none;
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+input[type="submit"]:hover {
+  background-color: #333;
+}
