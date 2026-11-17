@@ -1,26 +1,34 @@
 # Meu portfólio
 
-Site pessoal feito com HTML, CSS e um pouco de JavaScript, sem frameworks.
+Site pessoal em uma página, feito à mão com HTML, CSS e um pouco de JavaScript, sem frameworks. Responsivo, com tema escuro e acessível pelo teclado.
 
-## Páginas
+**Ver o site:** https://orthurus.github.io/meu-portfolio/
 
-| Página | Conteúdo |
+## Seções
+
+| Seção | Conteúdo |
 |---|---|
-| `index.html` | Sobre mim |
-| `formacao.html` | Formação acadêmica e idiomas |
-| `portfolio.html` | Projetos |
-| `contato.html` | Formulário de contato (demonstração: a mensagem não é enviada) |
+| Início | Apresentação e resumo |
+| Sobre | Quem eu sou e como trabalho |
+| Projetos | A Tapioca, DoNata Lanches, Mercadinho e este site, com links para o código e para baixar |
+| Formação | Estudos e idiomas |
+| Contato | Link para o GitHub |
 
-O visual fica em `estilo.css` e as imagens em `imagens/`.
+## Arquivos
 
-## Ver o site
+| Arquivo | Função |
+|---|---|
+| `index.html` | Página principal |
+| `estilo.css` | Visual (cores no topo do arquivo, em `:root`) |
+| `script.js` | Menu no celular, destaque da seção atual e animação ao rolar |
+| `favicon.svg` | Ícone da aba |
+| `imagens/fundo.jpg` | Fundo do topo |
+| `formacao.html`, `portfolio.html`, `contato.html` | Redirecionam para a seção correspondente (mantêm links antigos funcionando) |
 
-Abra o `index.html` no navegador. Para publicar online, ative o **GitHub Pages** em Settings → Pages, escolhendo a branch `main`.
+## Rodando localmente
 
-## Projetos
+Abra o `index.html` no navegador. Não precisa instalar nada.
 
-Os projetos mais recentes estão no [meu perfil do GitHub](https://github.com/Orthurus):
+## Publicação
 
-- [A Tapioca](https://github.com/Orthurus/a-tapioca): caixa para tapiocaria
-- [DoNata Lanches](https://github.com/Orthurus/donata-lanches): comandas para lanchonete
-- [Mercadinho](https://github.com/Orthurus/Mercadinho): PDV e estoque para mercado
+O site é servido pelo GitHub Pages a partir da branch `main`. Para atualizar, basta enviar os arquivos alterados.
