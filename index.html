@@ -1,33 +1,186 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Sobre Mim</title>
-    <!-- Importa o arquivo de estilo externo -->
-    <link rel="stylesheet" href="estilo.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filipe | Desenvolvedor Python</title>
+<meta name="description" content="Portfólio de Filipe, estudante de Análise e Desenvolvimento de Sistemas. Sistemas de caixa, comandas e estoque em Python para pequenos negócios.">
+<meta name="theme-color" content="#0b0b0d">
+<meta property="og:title" content="Filipe | Desenvolvedor Python">
+<meta property="og:description" content="Sistemas de caixa, comandas e estoque em Python para pequenos negócios.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!-- Cabeçalho com navegação principal -->
-    <header>
-        <nav>
-            <ul>
-                <!-- Link com destaque para a página atual (Sobre Mim) -->
-                <li><a href="index.html" class="ativo">Sobre Mim</a></li>
-                <li><a href="formacao.html">Formação</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="container topo__in">
+    <a class="marca" href="#inicio" aria-label="Filipe, início"><span class="marca__f">F</span><span class="marca__p">.</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato" class="menu__cta">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="hero" id="inicio">
+  <div class="container hero__in">
+    <p class="etiqueta">&lt;/&gt; desenvolvedor em formação</p>
+    <h1>Olá, eu sou o <span class="ouro">Filipe</span>.<br>Eu crio sistemas que rodam no balcão de verdade.</h1>
+    <p class="hero__txt">Estudo Análise e Desenvolvimento de Sistemas e desenvolvo, em Python, programas de caixa, comandas e estoque para pequenos negócios, do cadastro de produtos à atualização automática.</p>
+    <div class="hero__acoes">
+      <a class="btn btn--ouro" href="#projetos">Ver projetos</a>
+      <a class="btn btn--vazio" href="https://github.com/Orthurus" target="_blank" rel="noopener">Meu GitHub</a>
+    </div>
+    <ul class="numeros" aria-label="Resumo">
+      <li><strong>4</strong><span>projetos publicados</span></li>
+      <li><strong>Python</strong><span>linguagem principal</span></li>
+      <li><strong>UNINTER</strong><span>cursando ADS</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao" id="sobre">
+  <div class="container">
+    <header class="secao__cab reveal">
+      <p class="etiqueta">Sobre mim</p>
+      <h2>Aprendendo na prática, com projetos de verdade</h2>
     </header>
+    <div class="sobre reveal">
+      <div class="sobre__txt">
+        <p>Estou cursando Análise e Desenvolvimento de Sistemas e gosto de aprender construindo. Meus projetos nasceram de problemas reais de pequenos negócios: anotar pedidos sem perder nada, fechar o caixa sem conta de cabeça e controlar o estoque sem caderno.</p>
+        <p>Fora do código, gosto de jogos e de música em estilos variados.</p>
+      </div>
+      <ul class="cartoes">
+        <li><h3>Funciona sem internet</h3><p>Os programas rodam no computador do negócio e só usam a rede para se atualizar.</p></li>
+        <li><h3>Um arquivo só</h3><p>Distribuídos como <code>.exe</code> (e <code>.apk</code>), sem instalação complicada.</p></li>
+        <li><h3>Atualização automática</h3><p>Novas versões chegam pelas Releases do GitHub, com conferência de integridade.</p></li>
+        <li><h3>Dados protegidos</h3><p>Gravação segura, cópias de segurança e dados fora da pasta do programa.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <!-- Conteúdo principal da página -->
-    <main>
-        <!-- Título centralizado -->
-        <h1>Olá! Eu sou Filipe!</h1>  <!--Imagem para portfolio--><img src="imagens/sobremim.jpg" alt="Ícone animado de portfolio"
-       style="display:block; margin:0 auto 20px; max-width:150px;">
+<section class="secao secao--alt" id="projetos">
+  <div class="container">
+    <header class="secao__cab reveal">
+      <p class="etiqueta">Projetos</p>
+      <h2>O que eu já construí</h2>
+    </header>
+    <div class="grade">
 
-        <!-- Parágrafo justificado com informações pessoais -->
-        <p>Estou cursando Análise e Desenvolvimento de Sistemas. Não sou muito bom, mas estou tentando dar o meu máximo para aprender tudo que for necessário. Gosto de jogos e músicas em estilos variados.</p>
-    </main>
+      <article class="projeto reveal">
+        <div class="projeto__icone" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M12 24c4-6 20-6 24 0"/><path d="M16 30c5 4 11 4 16 0"/><circle cx="19" cy="22" r="1.2"/><circle cx="28" cy="21" r="1.2"/><circle cx="24" cy="28" r="1.2"/></svg>
+        </div>
+        <h3>A Tapioca</h3>
+        <p>Caixa (PDV) para tapiocaria: vários pedidos ao mesmo tempo por mesa ou comanda, cardápio editável, relatório de vendas, cupom para impressora e atualização automática com verificação SHA-256.</p>
+        <ul class="tags"><li>Python</li><li>Tkinter</li><li>PyInstaller</li><li>GitHub Actions</li></ul>
+        <div class="projeto__links">
+          <a href="https://github.com/Orthurus/a-tapioca" target="_blank" rel="noopener">Código</a>
+          <a href="https://github.com/Orthurus/a-tapioca/releases/latest" target="_blank" rel="noopener">Baixar</a>
+        </div>
+      </article>
+
+      <article class="projeto reveal">
+        <div class="projeto__icone" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="26" height="18" rx="2"/><path d="M13 34h10M18 28v6"/><rect x="33" y="17" width="10" height="21" rx="2"/><path d="M37 34h2"/></svg>
+        </div>
+        <h3>DoNata Lanches</h3>
+        <p>Comandas para lanchonete: o garçom lança o pedido no app Android e o servidor, no PC do caixa, recebe pela rede local, imprime por setor (cozinha, bar, chapa) e fecha a conta.</p>
+        <ul class="tags"><li>Python</li><li>Kivy</li><li>Tkinter</li><li>Android</li></ul>
+        <div class="projeto__links">
+          <a href="https://github.com/Orthurus/donata-lanches" target="_blank" rel="noopener">Código</a>
+          <a href="https://github.com/Orthurus/donata-lanches/releases/latest" target="_blank" rel="noopener">Baixar</a>
+        </div>
+      </article>
+
+      <article class="projeto reveal">
+        <div class="projeto__icone" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h6l4 22h22l4-15H13"/><circle cx="19" cy="38" r="2.5"/><circle cx="34" cy="38" r="2.5"/></svg>
+        </div>
+        <h3>Mercadinho</h3>
+        <p>PDV e controle de estoque para mercado: leitor de código de barras, dinheiro, cartões, Pix e fiado, sugestão de compra, folha de caixa diária e backups automáticos em SQLite.</p>
+        <ul class="tags"><li>Python</li><li>Tkinter</li><li>SQLite</li></ul>
+        <div class="projeto__links">
+          <a href="https://github.com/Orthurus/Mercadinho" target="_blank" rel="noopener">Código</a>
+          <a href="https://github.com/Orthurus/Mercadinho/releases/latest" target="_blank" rel="noopener">Baixar</a>
+        </div>
+      </article>
+
+      <article class="projeto reveal">
+        <div class="projeto__icone" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="38" height="30" rx="3"/><path d="M5 17h38"/><path d="M19 24l-5 4 5 4M29 24l5 4-5 4"/></svg>
+        </div>
+        <h3>Este site</h3>
+        <p>Portfólio feito à mão, sem frameworks: HTML, CSS e um pouco de JavaScript, responsivo e acessível.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="projeto__links">
+          <a href="https://github.com/Orthurus/meu-portfolio" target="_blank" rel="noopener">Código</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="formacao">
+  <div class="container">
+    <header class="secao__cab reveal">
+      <p class="etiqueta">Formação</p>
+      <h2>Estudos e idiomas</h2>
+    </header>
+    <ol class="linha">
+      <li class="reveal">
+        <span class="linha__marca" aria-hidden="true"></span>
+        <p class="linha__quando">Em andamento</p>
+        <h3>Análise e Desenvolvimento de Sistemas</h3>
+        <p>UNINTER</p>
+      </li>
+      <li class="reveal">
+        <span class="linha__marca" aria-hidden="true"></span>
+        <p class="linha__quando">Concluído</p>
+        <h3>Administração integrado ao Ensino Médio</h3>
+        <p>Instituto Federal de São Roque</p>
+      </li>
+      <li class="reveal">
+        <span class="linha__marca" aria-hidden="true"></span>
+        <p class="linha__quando">Idiomas</p>
+        <h3>Inglês intermediário</h3>
+        <p>Curso na CNA (incompleto)</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="secao secao--alt" id="contato">
+  <div class="container contato reveal">
+    <p class="etiqueta">Contato</p>
+    <h2>Vamos conversar?</h2>
+    <p>O melhor jeito de falar comigo, por enquanto, é pelo GitHub. Lá estão todos os meus projetos e dá para abrir uma conversa em qualquer repositório.</p>
+    <a class="btn btn--ouro" href="https://github.com/Orthurus" target="_blank" rel="noopener">github.com/Orthurus</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="container rodape__in">
+    <p>© <span id="ano">2026</span> Filipe. Feito à mão com HTML, CSS e JavaScript.</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

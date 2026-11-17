@@ -1,66 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Contato</title>
-  <link rel="stylesheet" href="estilo.css">
-  <style>
-    /* Mensagem de sucesso */
-    .mensagem-sucesso {
-      color: green;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 20px;
-      display: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filipe | Desenvolvedor Python</title>
+<meta http-equiv="refresh" content="0; url=index.html#contato">
+<link rel="canonical" href="index.html#contato">
 </head>
-<body>
-  <!-- Cabeçalho com menu de navegação -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Sobre Mim</a></li>
-        <li><a href="formacao.html">Formação</a></li>
-        <li><a href="portfolio.html">Portfólio</a></li>
-        <!-- Página atual destacada -->
-        <li><a href="contato.html" class="ativo">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Conteúdo principal da página -->
-  <main>
-    <h1>Fale Comigo</h1>
-    <img src="imagens/contato.gif" alt="Ícone animado de contato"
-       style="display:block; margin:0 auto 20px; max-width:150px;">
-    <form id="form-contato">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" required></textarea>
-
-      <input type="submit" value="Enviar">
-    </form>
-
-    <div class="mensagem-sucesso" id="mensagem-sucesso">
-      Sua mensagem foi enviada com sucesso!
-    </div>
-  </main>
-
-  <script>
-    // Captura o formulário
-    const form = document.getElementById('form-contato');
-    const mensagem = document.getElementById('mensagem-sucesso');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Impede envio real do formulário
-      form.reset(); // Limpa o formulário
-      mensagem.style.display = 'block'; // Exibe a mensagem
-    });
-  </script>
+<body style="background:#0b0b0d;color:#ececf1;font-family:sans-serif">
+<p>Esta página mudou. <a href="index.html#contato" style="color:#e7b94a">Clique aqui para continuar.</a></p>
+<script>location.replace("index.html#contato");</script>
 </body>
 </html>
